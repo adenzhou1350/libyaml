@@ -18,6 +18,7 @@ foreach(name IN ITEMS
   run-scanner
   test-nesting
   test-reader
+  test-loader
   test-version
   )
   add_yaml_executable(${name})
@@ -27,3 +28,4 @@ add_test(NAME version COMMAND test-version)
 add_test(NAME reader COMMAND test-reader)
 add_test(NAME nesting COMMAND test-nesting)
 
+add_test(NAME loader COMMAND test-loader)
